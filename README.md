@@ -24,7 +24,14 @@ npm install
 npm run dev
 ```
 
-6. Ejecutar el SEED para [crear la base de datos local](localhost:3000/api/seed)
+6. Ejecutar estos comandos de prisma
+
+```
+npx prisma migrate dev
+npx prisma generate
+```
+
+7. Ejecutar el SEED para [crear la base de datos local](localhost:3000/api/seed)
 
 # Prisma commands
 
