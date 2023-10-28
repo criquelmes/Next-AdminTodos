@@ -4,7 +4,7 @@ import prisma from "@/app/lib/prisma";
 import { NewTodo, TodosGrid } from "@/todos";
 
 export const metadata = {
-  title: "Listado de todos",
+  title: "Server Actions",
   description: "SEO Title",
 };
 
