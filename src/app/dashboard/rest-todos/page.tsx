@@ -1,6 +1,6 @@
 export const dynamic = "foce-dynamic";
 
-import prisma from "@/app/lib/prisma";
+import prisma from "@/lib/prisma";
 import { NewTodo, TodosGrid } from "@/todos";
 
 export const metadata = {
