@@ -15,7 +15,9 @@ export const NewTodo = () => {
     if (description.trim().length === 0) return;
 
     // await todosApi.createTodo(description);
-    await createTodo(description);
+    // await createTodo(description);
+    await todosApi.createTodo(description);
+    router.refresh();
     setDescription("");
     // router.refresh();
   };

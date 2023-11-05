@@ -7,11 +7,11 @@ import { NewTodo, TodosGrid } from "@/todos";
 import { redirect } from "next/navigation";
 
 export const metadata = {
-  title: "Listado de todos",
+  title: "Server Todos",
   description: "SEO Title",
 };
 
-export default async function RestTodosPage() {
+export default async function ServerTodosPage() {
   const user = await getUserSessionServer();
 
   if (!user) redirect("/api/auth/signin");
@@ -22,11 +22,12 @@ export default async function RestTodosPage() {
   });
 
   return (
-    <div>
+    <>
+      <span className="text-3xl mb-10">Server Actions</span>
       <div className="w-full p-5 mx-5 mb-1">
         <NewTodo />
       </div>
       <TodosGrid todos={todos} />
-    </div>
+    </>
   );
 }
